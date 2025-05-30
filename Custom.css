@@ -1,0 +1,272 @@
+<style>
+:root {
+    --override: #610c26; /* Cor do título */
+}
+.v-subheader {
+    font-size: 0.7rem !important; /* Aumenta o tamanho da fonte das subcategorias */
+    color: #949292 !important;
+}
+.v-sheet.theme--light.v-toolbar.v-toolbar--dense.v-toolbar--flat {
+    background-color: white !important; /* fundo branco */
+    border-top: 0px solid #9b9b9b; /* Linha acima com a cor #610c26 */
+}
+.v-toolbar .v-text-field input {
+    background-color: white !important; /* Fundo branco para a caixa de pesquisa */
+    color: rgb(48, 48, 48); /* Cor do texto preta */
+    border: 0px solid #ccc; /* Borda suave, mas agora branca */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+}
+.page-toc-card {
+    width: auto !important; /* Remove qualquer largura fixa */
+    margin-left: 0px !important; /* Ajusta a margem para manter o alinhamento */
+}
+.v-application .primary {
+    background: linear-gradient(400deg, #ffffff 30%, #ffffff 70%) !important;
+    border-color: transparent !important;
+}
+.v-sheet.theme--light.v-toolbar.v-toolbar--dense.v-toolbar--flat {
+    background: rgb(255, 255, 255) !important;
+}
+/* Cor do título na página principal */
+.v-main .contents h1 {
+    color: #636363 !important;
+    border-bottom: 2px solid #888888;
+}
+.v-main .contents hr:first-of-type {
+    display: none;
+}
+/* Ajustando o estilo do campo de entrada no topo */
+.v-toolbar .v-input__control {
+    border-color: #b8b8b8; /* Borda clara */
+}
+/* Gradiente para a cor de fundo do título */
+.v-main .contents h1:after {
+    background: linear-gradient(180deg, #ffffff 40%, #ffffff) !important;
+    border-color: transparent !important;
+}
+/* Cabeçalho dos comentários */
+.comments-header {
+    background-color: var(--override) !important;
+}
+/* Cor do scroll vertical */
+.__bar-is-vertical {
+    background: rgb(163, 163, 163) !important;
+    /* Estilo para a barra de rolagem */
+}
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Fundo da barra (trilha) */
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  /* A parte que se move (o thumb) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888888; /* cor do thumb */
+    border-radius: 10px;
+    border: 2px solid white; /* opcional, ajuda a integrar com fundo branco */
+}
+/* Cor do texto no menu esquerdo (somente o texto, sem alterar os ícones) */
+.v-navigation-drawer .v-list-item__title {
+    color: #414141 !important; /* Texto do menu esquerdo em preto */
+    font-size: 0.9rem !important; /* Aumenta o tamanho da fonte */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 1px; /* Ajuste conforme necessário */
+    margin-right: 4px;
+}
+.v-list-item__title:hover {
+    color: #383838 !important; /* Cor preta ao passar o mouse */
+    text-decoration: none !important; /* Remove qualquer sublinhado (se houver) */
+}
+/* Aumentando a largura do menu para o lado */
+.v-navigation-drawer {
+    width: 268px !important; /* Aumentando a largura do menu para 300px (ajuste conforme necessário) */
+}
+/* Cor de fundo do menu principal */
+.v-application .black {
+    background: linear-gradient(0deg, #ffffff 30%, #ffffff 70%) !important;
+}
+/* Cor de fundo do menu azul escuro */
+.v-application .blue.darken-2, .v-application .blue.darken-3 {
+    background-color: rgba(87, 12, 38) !important;
+}
+/* Cor de fundo do menu e de texto de sobreposição */
+.v-application .overline {
+    color: #383838 !important;
+}
+/* Estilo do cartão (sem borda e fundo branco) */
+.v-sheet.v-card {
+    border-radius: 0 !important;
+    border: 0 solid #ffffff;
+    background: #ffffff;
+}
+.v-list {
+    background: #ffffff;
+    background-color: #ffffff !important;
+    color: #313131; /* Texto do índice do menu direito em preto */
+    width: auto !important; /* Ajusta a largura do menu direito para ficar mais próximo do menu principal */
+    margin-left: 5px !important; /* Ajusta a margem esquerda para ficar mais perto do menu principal */
+    padding-top: 2x; /* Ajuste no espaçamento superior para melhorar o layout */
+}
+/* Ajustes no texto de sobreposição */
+#root .v-application .overline {
+    line-height: 1rem;
+    font-size: .625rem !important;
+    font-weight: 400;
+    letter-spacing: .1666666664em !important;
+}
+/* Bordas arredondadas nos cartões */
+.v-card > :first-child:not(.v-btn):not(.v-chip) {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+/* Sombra nos cartões */
+.v-sheet.v-card:not(.v-sheet--outlined) {
+    box-shadow: 0 3px 1px -2px rgba(145, 145, 145, 0.781), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+/* Bordas nos botões de atalho */
+.page-header-section .page-edit-shortcuts .v-btn:last-child {
+    border: 0px solid #ffffff !important;
+    padding: 8px !important;
+}
+/* Estilo do botão de atalho */
+.page-header-section .page-header-headings .page-edit-shortcuts button {
+    border: 1px solid #000000 !important;
+}
+/* Ajuste de margem no menu */
+.v-application--is-ltr .v-list-item__avatar:first-child,
+.v-application--is-rtl .v-list-item__action:last-of-type:not(:only-child),
+.v-application--is-rtl .v-list-item__avatar:last-of-type:not(:only-child),
+.v-application--is-rtl .v-list-item__icon:last-of-type:not(:only-child) {
+    margin-right: 8px !important;
+}
+/* Cor do ícone do menu esquerdo (preto) */
+.v-navigation-drawer .v-list-item__icon {
+    color: #acacac !important; /* Ícones do menu esquerdo em cinza */
+    font-size: 1.7rem !important; /* Aumenta o tamanho dos ícones */
+}
+/* Ajuste do estilo de links */
+a {
+    color: #610c26 !important;
+    text-decoration: none; /* Remove o sublinhado */
+}
+/* Cor do link ao passar o mouse */
+a:hover {
+    color: #911c3c !important;
+    text-decoration: none;
+}
+/* Links dentro de uma área específica (ex: uma descrição com a classe .descricao) */
+.descricao a {
+    color: #610c26 !important;
+    text-decoration: none;
+}
+/* Ajuste do hover para links dentro de .descricao */
+.descricao a:hover {
+    color: #911c3c !important;
+    text-decoration: none;
+}
+
+/* Barra de ferramentas personalizada */
+.v-toolbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px; /* Ajuste a altura conforme necessário */
+    background: #610c26 !important;
+}
+.page-author-card {
+    display: none;
+}
+/* Ícones em toda a aplicação devem ser pretos */
+.v-icon, .v-list-item__icon, .v-navigation-drawer .v-list-item__icon {
+    color: #646464 !important; /* Definir os ícones para preto */
+}
+/* Separadores dentro do menu esquerdo */
+.v-navigation-drawer .v-divider {
+    border-color: #dddddd !important; /* Cor do separador em preto */
+}
+.v-navigation-drawer .v-divider:first-of-type {
+    display: none !important;
+}
+/* Cor da borda do menu esquerdo */
+.v-navigation-drawer {
+    border-right: 0px solid #2b2626 !important; /* Borda direita do menu esquerdo */
+}
+body {
+    background-color: #ffffff; /* Cor cinza clara */
+}
+.v-application {
+    background-color: #fafafa !important; /* Cor cinza clara para o fundo da aplicação */
+}
+.subheading {
+    color: rgb(71, 71, 71);
+}
+.v-input__icon {
+    color: rgb(180, 180, 180); /* Deixa o ícone de pesquisa branco */
+}
+/* Garantir que o fundo do cabeçalho seja branco */
+.nav-header-inner {
+    background-color: white !important; /* Fundo branco */
+    color: rgb(255, 255, 255) !important; /* Texto em preto */
+    box-shadow: none !important; /* Remover sombra */
+    height: 64px; /* Altura do cabeçalho */
+}
+/* Ajustando a aparência da caixa de pesquisa para ter fundo branco */
+.v-input__slot {
+    background-color: white !important; /* Fundo branco para a caixa de pesquisa */
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 4px 8px; /* Ajuste de padding */
+}
+/* Remover a borda interna no campo de entrada */
+.v-input__slot input {
+    background-color: white !important;
+    color: rgb(56, 56, 56); /* Cor do texto */
+    border: none; /* Remover borda interna */
+    outline: none; /* Remover contorno ao focar */
+    padding: 10px; /* Padding interno do campo de texto */
+    width: 100%; /* Garantir que o campo ocupe o espaço disponível */
+}
+/* Garantir que os ícones tenham a cor preta ou cinza */
+.v-input__prepend-inner .v-input__icon,
+.v-btn__content .v-icon {
+    color: rgb(182, 182, 182) !important; /* Cor preta para os ícones */
+}
+/* Ajustar o foco no campo de pesquisa */
+.v-input__slot input:focus {
+    border: 1px solid #919191; /* Borda azul claro ao focar */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.8); /* Efeito de sombra ao focar */
+}
+/* Ajuste no botão de tags */
+.v-btn--flat.v-btn--icon.v-btn--round {
+    background-color: transparent !important; /* Fundo transparente */
+    color: rgb(165, 165, 165) !important; /* Cor do ícone em preto */
+}
+/* Remover qualquer sombra ao redor do cabeçalho ou botão */
+.v-btn--flat.v-btn--icon.v-btn--round:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Suavizar fundo ao passar o mouse */
+}
+.v-text-field__slot label {
+    color: rgb(255, 255, 255) !important; /* Cor do texto do rótulo (label) */
+}
+/* Garantir que o cabeçalho tenha altura exata */
+.v-toolbar__content {
+    height: 64px !important;
+}
+img {
+    max-width: 80% !important; /* Impede que as imagens ultrapassem o tamanho do contêiner */
+    height: auto !important; /* Mantém a proporção original das imagens */
+}
+v-sheet theme--dark v-toolbar v-toolbar--flat white" style="height: 56px;">
+}
+v-sheet theme--dark v-toolbar v-toolbar--flat" style="height: 56px; background-color: white;">
+}
+
+
+
+</style>
